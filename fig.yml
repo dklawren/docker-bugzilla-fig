@@ -1,0 +1,10 @@
+bzdb:
+  build: bzdb
+  expose:
+    - "3606"
+bzweb:
+  build: bzweb
+  links:
+    - bzdb:bzdb
+  ports:
+    - "80:80"
