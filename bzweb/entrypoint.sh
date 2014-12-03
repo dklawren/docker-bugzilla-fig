@@ -23,6 +23,7 @@ sed -e "s?%BUGZILLA_USER%?$BUGZILLA_USER?g" --in-place checksetup_answers.txt
 sed -e "s?%BUGZILLA_URL%?$BUGZILLA_URL?g" --in-place checksetup_answers.txt
 sed -e "s?%ADMIN_EMAIL%?$ADMIN_EMAIL?g" --in-place checksetup_answers.txt
 sed -e "s?%ADMIN_PASSWORD%?$ADMIN_PASSWORD?g" --in-place checksetup_answers.txt
+sed -e "s?%BUGZILLA_HOME%?$BUGZILLA_HOME?g" --in-place /etc/httpd/conf.d/bugzilla.conf
 sed -e "s?%WEB_HOME%?$WEB_HOME?g" --in-place /etc/httpd/conf.d/bugzilla.conf
 sed -e "s?User apache?User $BUGZILLA_USER?g" --in-place /etc/httpd/conf/httpd.conf
 sed -e "s?Group apache?Group $BUGZILLA_USER?g" --in-place /etc/httpd/conf/httpd.conf
