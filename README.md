@@ -123,7 +123,7 @@ example to generate patches.
 
 For root access just remove the last part:
 
-    sudo nsenter --target $PID --mount --uts --ipc --net --pid su - bugzilla
+    sudo nsenter --target $PID --mount --uts --ipc --net --pid
 
 [docker]: https://docs.docker.com/installation/
 [fig]: http://www.fig.sh
