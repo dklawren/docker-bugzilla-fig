@@ -18,7 +18,7 @@ ENV BUGZILLA_USER_ID 1000
 ENV BUGZILLA_GROUP_ID 1000
 ENV WEB_HOME /home/$BUGZILLA_USER/htdocs
 ENV BUGZILLA_HOME $WEB_HOME/bugzilla
-ENV BUGZILLA_URL http://localhost:80/bugzilla
+ENV BUGZILLA_URL http://localhost:80/bugzilla/
 ENv BUGZILLA_GIT_BRANCH 4.4
 ENV BUGZILLA_GIT_URL https://github.com/bugzilla/bugzilla.git
 
