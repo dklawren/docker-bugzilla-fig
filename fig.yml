@@ -2,6 +2,8 @@ bzdb:
   build: bzdb
   expose:
     - "3606"
+  volumes:
+    - /var/lib/mysql
 bzweb:
   build: bzweb
   links:
